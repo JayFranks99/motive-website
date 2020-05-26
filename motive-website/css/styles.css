@@ -1,0 +1,181 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+/* NAVIGATION CSS*/
+nav {
+font-family: 'Orbitron', sans-serif;
+color:white;
+}
+
+a {
+color: white;
+}
+a:hover {
+color: #037b96;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: white;
+}
+
+.navbar-light .navbar-brand {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  color: white;
+  background-color: #0095b7;
+  padding-bottom: 4rem;
+}
+
+.nav-item {
+padding: 0 2.5%;
+font-size:1.1rem;
+}
+/* CHANGING COLOUR OF TEXT AND NAVBAR BACKGROUND WHEN TOGGLE IS CLICKED*/
+.navbar-collapse {
+  color: #0095b7;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+
+/* REMOVING BORDER FROM HAMBURGER*/
+.navbar-dark .navbar-toggler {
+border-style: none;
+}
+
+/* REMOVING BORDER COLOR WHEN HAMGBURGER IS CLICKED ON */
+btn:focus, a:focus{
+outline: none;
+}
+.navbar-toggler:focus{
+outline: none;
+box-shadow: none;
+}
+
+/* SECTIONS */
+
+#title {
+  background-color: #0095b7;
+  color: white;
+}
+
+#features {
+  background-color: white;
+  color: #0095b7;
+}
+
+#testimonials {
+  background-color: #0095b7;
+  color: white;
+}
+
+#press {
+  background-color: white;
+  color: #0095b7;
+}
+
+#pricing {
+  background-color: #0095b7;
+  color: white;
+}
+
+#cta {
+  background-color: white;
+  color: #0095b7;
+}
+
+
+/* CONTAINERS */
+
+.intro-container {
+  padding: 3% 15%;
+}
+
+/* DIVS */
+
+.title-leftsection {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 2.5%;
+  margin: 5% 0;
+}
+
+.title-rightsection {
+  padding-right: 0px;
+  padding-left: 0px
+}
+
+.row {
+  padding: 0 16px;
+  margin: 0;
+}
+
+
+/* IOS BUTTON */
+
+.btn-outline-primary {
+    color: white;
+    background-color: transparent;
+    background-image: none;
+    border-color: white;
+    margin-top: 5%;
+}
+
+.btn-outline-primary:hover{
+  color: #037b96;
+  background-color: #0095b7;
+  border-color: #037b96;
+}
+
+.btn-outline-primary:active {
+  color: #037b96;
+	position:relative;
+	top:1px;
+}
+
+/* ANDROID BUTTON */
+
+.btn-light {
+  color: #0095b7;
+  margin-top: 5%;
+  margin-left: 0;
+  margin-right: 5%;
+}
+
+
+.btn-light:hover{
+  color: #037b96;
+}
+
+.btn-light:active {
+  color: #0095b7 !important;
+  position:relative;
+	top:1px;
+}
+
+/* PHONE IMAGES */
+
+.phone {
+  width: 45%;
+  margin-bottom: 0;
+  margin-left: 30%;
+  transform: rotate(25deg);
+  padding-top: 2%;
+  /* margin-top: 5%; needs adding for smaller screen size*/
+  }
