@@ -41,7 +41,7 @@ color: #037b96;
 }
 
 .nav-item {
-padding: 0 2.5%;
+padding: 0 3.5%;
 font-size:1.1rem;
 }
 /* CHANGING COLOUR OF TEXT AND NAVBAR BACKGROUND WHEN TOGGLE IS CLICKED*/
@@ -193,4 +193,8 @@ box-shadow: none;
 
 .features-div{
   padding: 5% 2%;
+}
+
+.icons {
+  padding-bottom: 5%;
 }
