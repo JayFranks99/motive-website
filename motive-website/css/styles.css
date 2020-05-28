@@ -8,6 +8,15 @@ h1 {
   font-weight: bolder;
 }
 
+h2 {
+  font-weight: bolder;
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-weight: bolder;
+}
+
 /* NAVIGATION CSS*/
 nav {
 font-family: 'Orbitron', sans-serif;
@@ -83,21 +92,14 @@ box-shadow: none;
 #testimonials {
   background-color: #0095b7;
   color: white;
-}
-
-#press {
-  background-color: white;
-  color: #0095b7;
-}
-
-#pricing {
-  background-color: #0095b7;
-  color: white;
+  text-align: center;
 }
 
 #cta {
   background-color: white;
   color: #0095b7;
+  padding: 5% 15%;
+  text-align: center;
 }
 
 
@@ -110,6 +112,7 @@ box-shadow: none;
 .features-container {
   padding: 0% 15%;
 }
+
 
 /* DIVS */
 
@@ -159,7 +162,7 @@ box-shadow: none;
   color: #0095b7;
   margin-top: 5%;
   margin-left: 0;
-  margin-right: 5%;
+  margin-right: 2.5%;
 }
 
 
@@ -188,13 +191,61 @@ box-shadow: none;
 
   .row-features {
     text-align: center;
-    padding: 0%;
+    padding: 7.5% 0%;
   }
 
-.features-div{
-  padding: 5% 2%;
+  .features-box{
+    padding: 5% 2%;
+  }
+
+  .features-description {
+    color: #a6a6a6;
+  }
+
+  .icons {
+    margin-bottom: 1rem;
+  }
+
+  .icons:hover {
+  color: #037b96;
+  }
+
+/* TESTIMONIALS SECTION */
+
+.testimonials-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
 }
 
-.icons {
-  padding-bottom: 5%;
+/* FOOTER SECTION */
+
+footer {
+  background-color:#0095b7 ;
+  color:white ;
+  text-align: center;
+  padding: 0.5% 0%;
+}
+
+.carousel-item {
+  padding: 5% 15%;
+}
+
+.footer-text {
+  margin-top: 1%;
+  font-size:0.7rem;
+}
+
+/* ANDROID BUTTON FOOTER*/
+.btn-primary {
+  color: white;
+  margin: 1%;
+ }
+
+
+/* APPLE BUTTON FOOTER*/
+.btn-outline-info {
+    color: #0095b7;
+    border-color: #0095b7;
+    margin: 1%;
 }
