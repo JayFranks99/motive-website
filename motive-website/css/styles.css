@@ -253,9 +253,16 @@ footer {
   background-color:#0095b7 ;
   color:white ;
   text-align: center;
-  padding: 0.5% 0%;
+  padding: 7.5% 0%;
 }
 
+.social-icon {
+  padding: 0.5%;
+}
+
+.social-icon:hover {
+text-decoration: none;
+}
 .footer-text {
   margin-top: 1%;
   font-size:0.7rem;
