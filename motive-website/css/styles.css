@@ -26,12 +26,16 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 
+.title-leftsection2 {
+display: none;
+}
+
 .uol {
 font-size: 3rem;
 }
 
 .download-text {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 .title-rightsection {
@@ -56,13 +60,13 @@ font-size: 3rem;
 }
 
 .btn-outline-primary:hover{
-  color: #037b96;
-  background-color: #0095b7;
+  color: white;
+  background-color: #037b96;
   border-color: #037b96;
 }
 
 .btn-outline-primary:active {
-  color: #037b96;
+  color:  #0095b7;
 	position:relative;
 	top:1px;
 }
@@ -210,13 +214,27 @@ text-decoration: none;
 /* ---------------------MEDIA QUERIES------------------------- */
 
 
+@media (max-width: 1199px) {
+.uol {
+  font-size: 2.75rem;
+}
+
+.download-text {
+  font-size: 1.75rem;
+}
+
+@media (max-width: 1104px) {
+.uol {
+  font-size: 2.25rem;
+}
+
+.download-text {
+  font-size: 1.5rem;
+}
+
 /* WHEN THE VIEWPORT HITS 999PX DISPLAY THIS CONTENT*/
 
 @media (max-width: 999px) {
-
-  #title {
-  }
-
 
   .intro-container {
     padding: 3% 15%;
@@ -227,22 +245,35 @@ text-decoration: none;
   padding-bottom: 0;
   transform: none;
   margin-left: 0;
-  width: 40%
+  width: 250px;
   }
 
   .title-leftsection {
   text-align: center;
   margin: 0;
-  padding: 5% 0;
+  padding-top: 15%;
+  }
+
+  .uol {
+    font-size: 3rem;
+  }
+
+  .download-text {
+    font-size: 2rem;
   }
 
   .title-rightsection {
-  padding: 5% 0;
+  padding-top: 2.5%;
+  padding-bottom: 10%;
   }
 
 }
 
-@media (max-width: 414px) {
+@media (max-width: 600px) {
+
+  #title {
+  padding: 20% 5%;
+  }
 
   /* LANDING */
   .intro-container {
@@ -255,24 +286,38 @@ text-decoration: none;
   }
 
   .title-leftsection {
+    display: none;
     text-align: center;
-    padding: 15% 0;
+    padding: 25% 0 5%;
+  }
+
+  .title-leftsection2 {
+  display: block;
+  padding-top: 10%;
+  }
+
+  .title-rightsection {
+    padding: 0;
   }
 
   .uol {
+    font-size: 2rem;
     margin-bottom: 5%;
   }
 
   .download-text {
-    font-size: 2rem;
+    display: none;
+    font-size: 1.5rem;
   }
 
   .phone-image {
-    width: 250px;
+    width: 200px;
   }
 
   .btn {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 3%;
   }
 
   /* Testimonials */
@@ -282,11 +327,12 @@ text-decoration: none;
 }
 
 .testimonials-text {
+font-size: 1.75rem;
 color: white;
 }
 
 .testimonials-image {
-width: 65%;
+width: 50%;
 }
 
 .name {
@@ -298,6 +344,14 @@ font-size: 1.25rem;
 
 .carousel-control {
   top: -50px;
+}
+
+#cta {
+  padding: 15% 5%;
+}
+.cta-heading {
+    font-size: 1.75rem;
+    margin-bottom: 5%;
 }
 
 }
