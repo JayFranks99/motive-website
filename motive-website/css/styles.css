@@ -4,6 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   text-align: center;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -104,6 +105,220 @@ font-size: 3rem;
   }
 
 
+/* Other title-section */
+
+/*---------------------------------LANDING------------------------------------*/
+
+.container-motive {
+  display: none;
+	position: relative;
+	height: 80%;
+	width: 80%;
+	margin: 0 auto;
+  height: 450px;
+  width: auto;
+  background-color: #0095b7;
+  color: white;
+  font-weight: bold;
+}
+
+.backg-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+}
+
+.landing-content {
+	position: absolute;
+	width: 80%;
+	margin: 0;
+	top: 40%;
+	left: 50%;
+ 	-ms-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+	text-align: center; /*HORIZONTAL CENTERING*/
+	line-height: 1.5;
+	letter-spacing: 2px;
+}
+
+.logo {
+width: 100px;
+height: 100px;
+margin: 0.5% auto;
+}
+
+.intro-heading {
+	margin: 0 auto;
+	font-size: 4rem;
+}
+
+.intro-description {
+	margin: 0 auto;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+/* IOS BUTTON */
+
+.btn-outline-primary {
+    color: white;
+    background-color: transparent;
+    background-image: none;
+    border-color: white;
+    margin-top: 2%;
+}
+
+.btn-outline-primary:hover{
+  color: white;
+  background-color: #037b96;
+  border-color: #037b96;
+}
+
+.btn-outline-primary:active {
+  color:  #0095b7;
+	position:relative;
+	top:1px;
+}
+
+/* ANDROID BUTTON*/
+
+.btn-light {
+  color: #0095b7;
+  margin-top: 2%;
+  margin-left: 0;
+  margin-right: 2.5%;
+}
+
+
+.btn-light:hover{
+  color: #037b96;
+}
+
+.btn-light:active {
+  color: #0095b7 !important;
+  position:relative;
+	top:1px;
+}
+
+
+  /*---------------------------------MEDIA QUERIES------------------------------------*/
+
+@media (max-width: 999px) {
+  .container-motive {
+    display: block;
+  }
+
+  .title-leftsection {
+    display: none;
+  }
+
+  .title-rightsection {
+    display: none;
+  }
+
+.backg-img {
+	width: 70%;
+}
+
+}
+
+
+/*--------------------------MEDIUM DEVICES------------------------*/
+
+@media (max-width: 768px) {
+
+	.logo {
+	width: 85px;
+	height: 85px;
+	}
+
+	.intro-heading {
+		font-size: 3.5rem;
+	}
+
+	.intro-description {
+		font-size: 1.5rem;
+	}
+
+}
+
+
+/*--------------------------SMALL DEVICES------------------------*/
+
+@media (max-width: 536px) {
+	.logo {
+	width: 70px;
+	height: 70px;
+	}
+
+	.intro-heading {
+		font-size: 3rem;
+	}
+
+	.intro-description {
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 465px) {
+
+	.logo {
+	width: 65px;
+	height: 65px;
+	}
+
+	.intro-heading {
+		font-size: 2.5rem;
+	}
+
+	.intro-description {
+		font-size: 1.25rem;
+	}
+
+}
+
+/*--------------------------IPHONE DEVICES------------------------*/
+
+@media (max-width: 394px) {
+
+	.logo {
+	width: 60px;
+	height: 60px;
+	}
+
+	.intro-heading {
+		font-size: 2.25rem;
+	}
+
+	.intro-description {
+		font-size: 1rem;
+	}
+
+}
+
+/*--------------------------IPHONE 5------------------------*/
+
+@media (max-width: 350px) {
+
+	.logo {
+	width: 45px;
+	height: 45px;
+	}
+
+	.intro-heading {
+		font-size: 2rem;
+	}
+
+	.intro-description {
+		font-size: 0.8rem;
+	}
+
+}
+
+
+
 /* ---------------------FEATURES SECTION------------------------- */
 
 #features {
@@ -193,7 +408,7 @@ color: white;
 /* ---------------------FOOTER SECTION------------------------- */
 
 footer {
-  background-color:#0095b7 ;
+  background-color:#0095b7;
   color:white ;
   padding: 7.5% 0;
 }
@@ -259,7 +474,8 @@ text-decoration: none;
   }
 
   .download-text {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    margin: 0 auto;
   }
 
   .title-rightsection {
@@ -269,10 +485,24 @@ text-decoration: none;
 
 }
 
+@media (max-width: 768px) {
+  .backg-img {
+    width: 85%;
+  }
+}
+
 @media (max-width: 600px) {
 
+.container-motive {
+  display: none;
+}
+
+.title-rightsection {
+  display: block;
+}
+
   #title {
-  padding: 20% 5%;
+  padding: 15% 5%;
   }
 
   /* LANDING */
@@ -301,21 +531,22 @@ text-decoration: none;
   }
 
   .uol {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 5%;
   }
 
   .download-text {
-    display: none;
-    font-size: 1.5rem;
+    /* display: none; */
+    font-size: 1.75rem;
+    padding-bottom: 10%;
   }
 
   .phone-image {
-    width: 200px;
+    width: 250px;
   }
 
   .btn {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     width: 80%;
     margin: 3%;
   }
@@ -354,4 +585,28 @@ font-size: 1.25rem;
     margin-bottom: 5%;
 }
 
+}
+
+
+@media (max-width: 400px) {
+
+#title {
+  padding: 0 5% 10%;
+}
+
+.title-leftsection2 {
+  padding: 2%;
+}
+
+.phone-image {
+  width: 200px;
+}
+
+.download-text {
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+
+.btn {
+  font-size: 1rem;
 }
